@@ -21,5 +21,11 @@ class Client:
 
         return is_suspicious
 
+    def set_address(self, address: str) -> None:
+        self.address = address
+
+    def set_passport_number(self, passport_number: int) -> None:
+        self.passport_number = passport_number
+
     def __str__(self):
         return f"{self.name} {self.surname}"
